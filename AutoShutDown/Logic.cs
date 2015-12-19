@@ -127,7 +127,7 @@ namespace AutoShutDown
             lock (tmutex)
             {
                 t = Help.InputFormat(h, m);
-                //because it is static method so to avoid race condition of  acquiring race condition for getting correct input
+                //because it is static method so to avoid race condition of acquiring race condition for getting correct input
             }
             Thread.Sleep(t);
             TryStart(tindex);//for taking control.         
